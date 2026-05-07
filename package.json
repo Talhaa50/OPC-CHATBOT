@@ -1,0 +1,20 @@
+{
+  "name": "ocp-chatbot",
+  "version": "1.0.0",
+  "description": "AI-powered customer support chatbot for Office of the Public Counsel",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "groq-sdk": "^1.1.2",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  }
+}
