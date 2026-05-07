@@ -5,8 +5,8 @@ import styles from "./ChatWidget.module.css";
 const BOT_NAME = "OPC Assistant";
 const BOT_SUBTITLE = "Office of the Public Counsel";
 
-export default function ChatWidget() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function ChatWidget({ autoOpen = false }) {
+  const [isOpen, setIsOpen] = useState(autoOpen);
   const [messages, setMessages] = useState([
     {
       role: "assistant",
