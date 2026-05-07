@@ -1,111 +1,126 @@
 {
   "personality": {
     "name": "OPC Assistant",
-    "role": "Customer Support Specialist for Office of the Public Counsel",
-    "tone": "Friendly, professional, empathetic, clear, and action-oriented",
-    "greeting": "👋 Welcome to OPC Support! I'm here to help with complaints, services, documentation, fees, contact info, and general guidance. What can I help you with?",
-    "fallback": "I don't have that specific information in my knowledge base. Please contact OPC directly or visit your nearest office for assistance.",
-    "offTopic": "I'm specialized in OPC services. Feel free to ask me about complaint processes, services, fees, office hours, or how to contact us.",
-    "systemPromptRules": {
-      "responseLength": "Keep responses to 4-6 sentences max, unless complex explanation needed",
-      "formatting": "Use → for paths/navigation, numbered lists for steps, emojis for categories",
-      "tone_guidelines": "Be warm but professional. Show empathy for customer problems. Be encouraging about the process",
-      "whenUnsure": "Be honest about limitations. Never guess. Direct to phone/office.",
-      "handoff": "End each response with: 'Need help with anything else?'",
-      "personality_traits": [
-        "Proactive: Offer solutions, not just answers",
-        "Patient: Handle frustration with grace",
-        "Clear: Simplify complex legal/process info",
-        "Respectful: Acknowledge dignity of customer issues",
-        "Helpful: Provide multiple contact options when needed"
-      ]
-    }
+    "role": "Customer Support Assistant for Punjab Overseas Pakistanis Commission (POPC), Government of Punjab, Pakistan",
+    "tone": "Professional, helpful, empathetic and friendly. Always respond in clear simple English. Be concise but thorough. Show genuine care for Overseas Pakistanis.",
+    "greeting": "Hello! 👋 Welcome to OPC Punjab Assistant. I am here to help Overseas Pakistanis from Punjab with complaints, services, and facilitation. How can I help you today?",
+    "fallback": "I currently do not have specific information on that. Please contact us directly:\n📞 Helpline: 111-672-672\n📧 Email: info@opc.punjab.gov.pk\n🌐 Portal: https://ospc.punjab.gov.pk\n🏢 Office: 1 Club Road, GOR-I, Lahore\nAvailable Mon–Sat, 9am–5pm PKT.",
+    "offTopic": "I can only assist with queries related to the Punjab Overseas Pakistanis Commission (POPC). For other matters please call 111-672-672 or email info@opc.punjab.gov.pk."
   },
   "quickActions": [
-    "What are OPC services?",
-    "How do I file a complaint?",
-    "What is the complaint process?",
-    "What are your office hours?",
-    "How do I contact OPC?",
-    "What are your fees?",
-    "Can you help with consumer disputes?",
-    "What documents do I need?"
+    "How to file a complaint?",
+    "What documents do I need?",
+    "Is the service free?",
+    "How to track my case?",
+    "Can I file from abroad?",
+    "What complaints are handled?",
+    "How to contact OPC?"
   ],
   "knowledge": [
     {
-      "id": "topic-opc-overview",
-      "topic": "About OPC (Office of the Public Counsel)",
-      "content": "The Office of the Public Counsel (OPC) is a government agency dedicated to protecting consumer rights and providing legal assistance to the public. We offer free or low-cost legal services, consumer protection, and dispute resolution. Our mission is to ensure fair treatment and advocate for citizens' rights in commercial transactions and legal matters."
+      "id": "what-is-opc",
+      "topic": "What is OPC / About OPC Punjab",
+      "content": "The Punjab Overseas Pakistanis Commission (POPC) is a special institution established by the Government of Punjab under the Punjab Overseas Pakistanis Commission Act 2021.\n\nMain purpose:\n- Protect rights and interests of Overseas Pakistanis from Punjab\n- Provide a one-stop solution for complaints and issues in Pakistan\n- Act as bridge between Overseas Pakistanis and government departments\n- Ensure issues are addressed promptly and effectively\n\nPOPC is a provincial body specifically serving Overseas Pakistanis from Punjab.\nHead Office: 1 Club Road, GOR-I, Lahore, Punjab, Pakistan"
     },
     {
-      "id": "topic-services",
-      "topic": "OPC Services",
-      "content": "OPC provides the following services:\n1. Free legal consultation and advice\n2. Consumer complaint resolution\n3. Mediation and arbitration services\n4. Legal representation in disputes\n5. Consumer education and awareness programs\n6. Investigation of consumer complaints\n7. Business practice regulation oversight\n8. Help with contract disputes\n9. Assistance with fraud and scam issues\n10. Family law consultation (varies by location)"
+      "id": "who-is-eligible",
+      "topic": "Who is eligible / Who qualifies as Overseas Pakistani",
+      "content": "You are eligible to use POPC services if you are:\n- A Pakistani citizen living abroad for employment or business\n- Holder of CNIC, NICOP (National Identity Card for Overseas Pakistanis) or POC (Pakistan Origin Card)\n- A dual national with origins in Punjab province\n- A foreign national of Pakistani origin holding NICOP or POC with issues in Punjab\n\nNote: POPC specifically serves people with roots in Punjab. For other provinces, contact relevant provincial authorities."
     },
     {
-      "id": "topic-complaint-process",
-      "topic": "How to File a Complaint with OPC",
-      "content": "Filing a complaint is simple:\n1. Visit our office or access our online complaint portal\n2. Fill out the complaint form with details about your issue\n3. Provide supporting documents (receipts, contracts, emails, etc.)\n4. Submit your complaint and receive a reference number\n5. Our team will review and investigate your complaint\n6. You'll be contacted within 5-7 business days with next steps\n7. Mediation or legal action may follow\n8. You'll be kept updated throughout the process\n\nNote: Complaints must be filed within 1 year of the incident."
+      "id": "how-to-file-complaint",
+      "topic": "How to file a complaint / How to register a complaint",
+      "content": "You can file a complaint through 3 channels:\n\n1. 🌐 Online Portal (RECOMMENDED): Visit https://ospc.punjab.gov.pk — file from anywhere in the world, 24/7. You get a unique complaint number to track progress.\n\n2. 🏢 Walk-in: Visit POPC office at 1 Club Road, GOR-I, Lahore. You or your authorized representative can come in person.\n\n3. 📧 Email: Send documents to info@opc.punjab.gov.pk\n\nYou do NOT need to be in Pakistan to file. Someone else can file on your behalf with an authority letter or Power of Attorney."
     },
     {
-      "id": "topic-required-documents",
-      "topic": "Documents Needed for a Complaint",
-      "content": "To file an effective complaint, please provide:\n→ Proof of purchase (receipt, invoice, contract)\n→ Original complaint letter (written/email to the business)\n→ Business response (if any)\n→ Proof of payment (check, card statement, etc.)\n→ Communication records (emails, messages, call logs)\n→ Photos or evidence of defective goods\n→ Warranty information\n→ Your identification (ID card, passport)\n→ Contact information (phone, email, address)\n\nThe more documentation you provide, the stronger your case."
+      "id": "required-documents",
+      "topic": "Documents required / What documents do I need",
+      "content": "To file a complaint with POPC you need:\n\n✅ Copy of CNIC / NICOP / POC\n✅ Copy of valid Visa OR Foreign Passport OR Residence Card OR Iqama\n✅ Your full name and contact details including foreign address\n✅ Clear description of your complaint\n✅ Details of the person or department you are complaining against\n✅ Copies of all relevant supporting documents\n✅ Authority letter (if someone is representing you in Pakistan)\n\nYou can file in English or Urdu. No rigid format required — just be clear and include all details."
     },
     {
-      "id": "topic-complaint-types",
-      "topic": "Types of Complaints We Handle",
-      "content": "OPC handles complaints including:\n1. Defective products or services\n2. Non-delivery of goods\n3. False advertising\n4. Fraud or scams\n5. Unfair contract terms\n6. Overcharging\n7. Poor service quality\n8. Warranty disputes\n9. Refund issues\n10. Discrimination in business\n11. Hidden charges\n12. Expired products\n13. Misrepresentation\n14. Business malpractice\n15. Labor disputes (varies)"
+      "id": "types-of-complaints",
+      "topic": "What types of complaints are handled / What issues does OPC solve",
+      "content": "POPC handles a wide range of complaints:\n\n🏠 Property: Land grabbing, illegal possession, housing society disputes\n👨‍👩‍👧 Family: Disputes requiring legal or administrative help\n⚖️ Criminal: FIR registration, police investigation issues\n🏛️ Government Departments: Any Punjab government department\n💡 Utilities: Electricity (WAPDA/LESCO), Gas (SNGPL), Water (WASA)\n🏦 Banking: Frozen accounts, bank disputes, Roshan Digital Account issues\n💼 Employment: Recruitment fraud, business disputes\n📋 Documents: NOC delays, lost documents, license issues\n\nPOPC does NOT handle:\n- Anonymous or false complaints\n- Issues outside Punjab province\n- Cases already in court (sub-judice)\n- Cases where complainant has no personal interest"
     },
     {
-      "id": "topic-timeline",
-      "topic": "Complaint Resolution Timeline",
-      "content": "Typical complaint timeline:\n→ Day 1: Complaint filing and review\n→ Day 2-5: Initial investigation and business notification\n→ Day 5-14: Business has 10 days to respond\n→ Day 15-30: Mediation and negotiation phase\n→ Day 30-60: If unresolved, formal proceedings begin\n→ Day 60+: Legal action or arbitration\n→ Resolution: Can take 2-6 months depending on complexity\n\nComplex cases may take longer. We'll keep you informed at each stage."
+      "id": "complaint-process",
+      "topic": "How does the complaint process work / Complaint redressal process",
+      "content": "The OPC complaint process works in these steps:\n\n1. SUBMIT — File via portal, email or in person\n2. REGISTER — You get a unique complaint number\n3. SCRUTINIZE — Complaint is checked for jurisdiction\n4. REFER — Forwarded to relevant government department or District Committee (DOPC)\n5. HEARING — Both parties heard. Video calls available for overseas complainants\n6. FOLLOW-UP — POPC monitors progress and sends reminders\n7. RESOLVE — Case marked resolved when complainant confirms satisfaction\n\nTrack your complaint at: https://ospc.punjab.gov.pk"
     },
     {
-      "id": "topic-fees",
-      "topic": "OPC Fees and Charges",
-      "content": "OPC pricing structure:\n→ Initial consultation: FREE for all citizens\n→ Complaint filing: FREE or minimal fee (varies)\n→ Legal representation: FREE for low-income citizens, subsidized for others\n→ Mediation services: FREE for first mediation attempt\n→ Arbitration: Nominal fee (typically $50-200 depending on claim amount)\n→ Documentation/copies: Small copying fee per page\n\nWe ensure everyone can afford our services. Payment plans available for those unable to pay upfront."
+      "id": "is-it-free",
+      "topic": "Is the service free / Are there any fees / Cost",
+      "content": "Yes! All services provided by the Punjab Overseas Pakistanis Commission (POPC) are completely FREE OF CHARGE.\n\nThere are absolutely no registration fees, processing fees, or hidden charges for filing or following up on any complaint."
     },
     {
-      "id": "topic-office-hours",
-      "topic": "OPC Office Hours and Locations",
-      "content": "Main Office Hours:\n→ Monday - Friday: 9:00 AM - 5:00 PM\n→ Saturday: 9:00 AM - 1:00 PM\n→ Sunday & Public Holidays: CLOSED\n→ Lunch Break: 1:00 PM - 2:00 PM\n\nMultiple locations available in major cities:\n→ Head Office: Capital City (Downtown)\n→ Regional Branch 1: Northern District\n→ Regional Branch 2: Southern District\n→ Regional Branch 3: Eastern District\n→ Satellite Office: Western District\n\nCall ahead or use online booking for appointments."
+      "id": "track-complaint",
+      "topic": "How to track complaint / Track my case / Check complaint status",
+      "content": "To track your POPC complaint:\n\n1. Visit: https://ospc.punjab.gov.pk\n2. Log in to your account\n3. Use your unique complaint number assigned when you filed\n4. View current status and updates from your dealing officer\n\nYou can also:\n- Submit additional documents through the portal\n- Call helpline: 111-672-672\n- Email: info@opc.punjab.gov.pk"
     },
     {
-      "id": "topic-contact-info",
-      "topic": "How to Contact OPC",
-      "content": "Contact OPC through multiple channels:\n\n📞 Phone:\n→ Main Line: +1 (555) 123-4567\n→ Complaint Hotline: +1 (555) 123-4568 (24/7)\n→ Legal Consultation: +1 (555) 123-4569\n\n📧 Email:\n→ General Inquiries: info@opc.gov\n→ Complaints: complaints@opc.gov\n→ Legal Questions: legal@opc.gov\n\n🌐 Online:\n→ Website: www.opc.gov\n→ Online Portal: portal.opc.gov\n→ Chat Support: Available on our website\n\n🏢 In Person:\n→ Visit any of our offices (see office hours)\n→ Book appointment: www.opc.gov/appointments\n\n📱 Social Media:\n→ Facebook: @OPCOfficial\n→ Twitter: @OPC_Official"
+      "id": "contact-opc",
+      "topic": "Contact OPC / Contact information / How to reach OPC",
+      "content": "Punjab Overseas Pakistanis Commission (POPC) Contact Details:\n\n📞 Helpline: 111-672-672 (dedicated helpline)\n📧 Email: info@opc.punjab.gov.pk\n🌐 Online Portal: https://ospc.punjab.gov.pk\n🏢 Address: 1 Club Road, GOR-I, Lahore, Punjab, Pakistan\n\n🕐 Office Hours: Monday to Saturday, 9:00 AM – 5:00 PM PKT\n🌍 Portal: Available 24/7 online\n📹 Video Hearings: Skype, WhatsApp, Zoom available for overseas complainants"
     },
     {
-      "id": "topic-frequently-asked",
-      "topic": "Frequently Asked Questions (FAQs)",
-      "content": "Q: Is OPC service free?\nA: Initial consultation is FREE. Other services are free or low-cost based on income.\n\nQ: How long does complaint resolution take?\nA: Typically 2-6 months, depending on complexity.\n\nQ: Do I need a lawyer?\nA: Not required. OPC can provide legal representation if needed.\n\nQ: Can I file complaint online?\nA: Yes, visit portal.opc.gov or file in person.\n\nQ: What if the business ignores my complaint?\nA: OPC will take legal action on your behalf.\n\nQ: Can I withdraw my complaint?\nA: Yes, with written notice at any time before resolution.\n\nQ: Are complaint records confidential?\nA: Yes, protected by privacy law.\n\nQ: What if I'm not satisfied with OPC's decision?\nA: You can appeal or pursue legal action independently."
+      "id": "file-from-abroad",
+      "topic": "Can I file from abroad / File complaint from outside Pakistan",
+      "content": "Yes! You can file and follow up on your complaint from anywhere in the world.\n\nOptions from abroad:\n1. 🌐 Online Portal: https://ospc.punjab.gov.pk — available 24/7\n2. 📧 Email: info@opc.punjab.gov.pk\n3. 📹 Video Hearings: POPC offers Skype, WhatsApp, and Zoom hearings so you do not need to travel to Pakistan\n4. 👤 Representative: A close relative or person with Power of Attorney can file and attend hearings on your behalf in Pakistan\n\nYou do NOT need to physically come to Pakistan."
     },
     {
-      "id": "topic-mediation-arbitration",
-      "topic": "Mediation and Arbitration Services",
-      "content": "MEDIATION:\n→ Neutral third party facilitates discussion\n→ Goal: Find mutually acceptable solution\n→ Faster and cheaper than court\n→ Both parties must agree to terms\n→ Confidential process\n→ Success rate: 70%+ of cases resolved\n\nARBITRATION:\n→ Binding decision by arbitrator\n→ Faster than court proceedings\n→ More formal than mediation\n→ Decision is final and enforceable\n→ Suitable for contract disputes\n→ Lower cost than litigation\n\nBoth are effective alternatives to court battles. Most cases start with mediation, escalate to arbitration if needed."
+      "id": "property-disputes",
+      "topic": "Property disputes / Land grabbing / Housing society issues",
+      "content": "POPC is highly effective for property disputes:\n\n✅ What POPC can help with:\n- Illegal possession and land grabbing\n- Housing society disputes\n- Getting FIR registered if police refuse\n- Verifying documents with PLRA (Punjab Land Records Authority)\n- Retrieving lost property documents\n- Agricultural land disputes\n\n🛡️ Prevention tips:\n- Ensure property is in the PLRA digital system\n- Have a trusted person check regularly\n- Use specific time-bound Special Power of Attorney — never a vague General POA\n- Keep property tax and utility bills updated\n\n⚠️ For immediate stay orders go directly to Civil Court as POPC cannot issue injunctions."
     },
     {
-      "id": "topic-rights-and-responsibilities",
-      "topic": "Consumer Rights and Responsibilities",
-      "content": "CONSUMER RIGHTS:\n→ Right to safe products and services\n→ Right to accurate information\n→ Right to choose freely\n→ Right to fair pricing\n→ Right to complain and be heard\n→ Right to compensation for damages\n→ Right to privacy\n→ Right to legal recourse\n\nCONSUMER RESPONSIBILITIES:\n→ Read terms and conditions\n→ Keep proof of purchase\n→ Report issues promptly\n→ Cooperate with investigation\n→ Provide truthful information\n→ Follow instructions for products\n→ Maintain evidence\n→ Be reasonable in claims"
+      "id": "power-of-attorney",
+      "topic": "Power of Attorney advice / POA guidance",
+      "content": "POPC's key advice on Power of Attorney:\n\n✅ Best Practices:\n- Be SPECIFIC: State exact powers (e.g. sell property X — not manage all affairs)\n- Add a TIME LIMIT: Specify validity period (e.g. 6 months)\n- Require JOINT SIGNATORIES: Two people who must act together\n- Get it attested by Pakistan Embassy or Consulate in your country\n- Register it in Pakistan if it involves property\n\n⚠️ NEVER give a vague General Power of Attorney. Always use a specific time-bound Special Power of Attorney."
     },
     {
-      "id": "topic-prevention-tips",
-      "topic": "How to Avoid Consumer Fraud and Scams",
-      "content": "Prevention Tips:\n1. RESEARCH: Check business reputation and reviews\n2. DOCUMENTATION: Keep all receipts and contracts\n3. CLEAR TERMS: Understand what you're buying\n4. PAYMENT: Use secure payment methods\n5. WARRANTIES: Get written warranty information\n6. VERIFICATION: Verify business licensing\n7. RED FLAGS: Avoid deals too good to be true\n8. QUESTION PRICES: Compare before buying\n9. INSURANCE: Check for service guarantees\n10. REPORT: Tell OPC about suspicious practices\n\nCommon Scams to Avoid:\n→ Advance payment for services not rendered\n→ Bait and switch tactics\n→ Counterfeit products\n→ Phishing and online fraud\n→ Unlicensed practitioners\n→ Price gouging"
+      "id": "video-hearings",
+      "topic": "Video conferencing hearings / Online hearings / Attend hearing from abroad",
+      "content": "POPC provides video conferencing so you can attend hearings from abroad without travelling to Pakistan.\n\nHow it works:\n1. You are given a scheduled hearing date and time\n2. POPC uses: Skype, WhatsApp, or Zoom\n3. You join from your country of residence\n4. Both parties are heard fairly\n\nThis saves significant travel cost and time for overseas complainants."
     },
     {
-      "id": "topic-business-regulations",
-      "topic": "Business Practice Regulations",
-      "content": "Regulations businesses must follow:\n→ Truth in Advertising: Must provide accurate information\n→ Price Disclosure: Clear pricing without hidden charges\n→ Contract Clarity: Fair and understandable terms\n→ Refund Policies: Must honor reasonable refund terms\n→ Product Quality: Must meet safety standards\n→ Delivery: Must deliver as promised\n→ Consumer Data: Must protect personal information\n→ Licensing: Must display valid business license\n→ Warranty: Must honor stated warranties\n→ Non-discrimination: Fair treatment to all customers\n\nOPC enforces these regulations and penalizes violations."
+      "id": "utility-complaints",
+      "topic": "Utility complaints / Electricity gas water issues / WAPDA SNGPL WASA",
+      "content": "POPC can assist with utility issues:\n\n⚡ Electricity (WAPDA/LESCO): Delayed connections, wrongful disconnection, over-billing — POPC contacts the CEO of the concerned company\n\n🔥 Gas (SNGPL): New gas connection delays — POPC follows up with Sui Northern Gas\n\n💧 Water (WASA): Supply issues, sewerage problems, incorrect billing — POPC contacts the MD of WASA\n\n🏦 Banking: Frozen accounts without valid reason — POPC asks bank for legal justification\nRoshan Digital Account (RDA) problems — POPC forwards to State Bank of Pakistan"
     },
     {
-      "id": "topic-legal-consultation",
-      "topic": "Legal Consultation Services",
-      "content": "OPC provides legal consultation for:\n→ Contract review and explanation\n→ Consumer dispute guidance\n→ Fraud case assessment\n→ Warranty claims evaluation\n→ Legal rights explanation\n→ Documentation assistance\n→ Court procedure guidance\n→ Representation in legal matters\n→ Appeal processes\n→ Settlement negotiations\n\nHow to get legal consultation:\n1. Call our legal line: +1 (555) 123-4569\n2. Book appointment online: www.opc.gov/appointments\n3. Visit office in person\n4. Email specific legal question: legal@opc.gov\n\nWait times: 3-7 days for free consultation"
+      "id": "criminal-fir",
+      "topic": "Criminal matters / FIR registration / Police complaints",
+      "content": "POPC can assist with criminal matters:\n\n✅ If police refuse to register your FIR: POPC can intervene and direct police to proceed as per law\n✅ Police investigation complaints: POPC can ask senior officers to review a faulty investigation\n✅ Inter-provincial matters: POPC can direct Punjab Police to register FIR even if accused is in another province\n✅ Court decree implementation: POPC can help ensure court decisions are implemented\n\n❌ POPC CANNOT take cognizance of matters already in court (sub-judice)."
+    },
+    {
+      "id": "legal-powers",
+      "topic": "POPC legal powers / What can OPC do / OPC authority",
+      "content": "POPC Legal Authority:\n✅ Directions to provincial government departments are BINDING under the POPC Act\n✅ Can summon officials and seek reports\n✅ Can recommend disciplinary action against non-compliant officials\n✅ Can recommend anti-corruption proceedings\n\nLimitations:\n❌ Cannot act as a formal court (cannot pass decrees or sentence anyone)\n❌ Cannot handle sub-judice matters (already in court)\n❌ Primary jurisdiction is Punjab only\n❌ Cannot award financial damages (you need civil court for this)\n\nYou CAN still go to court alongside or after POPC proceedings."
+    },
+    {
+      "id": "inheritance-family",
+      "topic": "Inheritance / Family matters / Legal heirs / NADRA family tree",
+      "content": "POPC assistance with inheritance and family matters:\n\n✅ If the original overseas Pakistani has passed away:\n- Legal heirs with succession certificate can file or continue the complaint\n\n✅ NADRA family tree errors affecting inheritance:\n- POPC can take up errors in Family Registration Certificates (FRC)\n- Coordinates with NADRA regional headquarters for correction\n\n✅ Lost inheritance documents:\n- POPC can direct Sub-Registrar Office or Revenue Department to issue certified copies"
+    },
+    {
+      "id": "investment-business",
+      "topic": "Investment / Business facilitation / Starting business in Pakistan",
+      "content": "POPC supports Overseas Pakistani investors:\n\n✅ Investment guidance: Directed to Punjab Board of Investment and Trade (PBIT)\n✅ Special Economic Zones and tax holiday information\n✅ Business debt recovery: POPC acts as mediator\n✅ Commercial contract disputes with government departments\n✅ Company registration delays (SECP liaison)\n✅ NOC delays: POPC can ask department head to expedite\n\n💡 Always use formal legal channels for all transactions and keep meticulous records."
+    },
+    {
+      "id": "priority-cases",
+      "topic": "Priority cases / Fast track complaints / Urgent cases",
+      "content": "POPC gives special priority to:\n\n🔴 Fast-tracked cases:\n- Senior citizens (elderly Overseas Pakistanis)\n- Widows\n- Cases involving illegal dispossession\n- Threats to life\n- Urgent situations requiring immediate action\n\nMultiple-department complaints are handled most effectively by POPC as it coordinates all departments simultaneously through a single window."
+    },
+    {
+      "id": "commission-constitution",
+      "topic": "Commission members / Who runs OPC / Commission constitution",
+      "content": "The Punjab Overseas Pakistanis Commission is constituted as follows:\n\n1. Chief Minister Punjab — Chairperson\n2. Barrister Amjad Malik — Vice Chairperson\n3. 9 x MPAs — Vacant\n4. 9 x Private Members — Vacant\n5. Commissioner OPC — Member/Secretary\n6. Chief Secretary Punjab — Official Member\n7. Senior Member Board of Revenue Punjab — Official Member\n8. Chairman Planning & Development Board Punjab — Official Member\n9. Additional Chief Secretary (Home) Punjab — Official Member\n10. Provincial Police Officer Punjab — Official Member\n11. Chairman Punjab Board of Investment & Trade — Official Member\n12. Chairman Punjab Information Technology Board — Official Member\n13. Advocate General Punjab — Official Member\n14. Prosecutor General Punjab — Official Member"
+    },
+    {
+      "id": "governing-law",
+      "topic": "Governing law / Legal framework / OPC Act",
+      "content": "The Punjab Overseas Pakistanis Commission operates under:\n\n📋 The Punjab Overseas Pakistanis Commission Act 2021\n\nThis Act of the Punjab Assembly establishes the legal mandate, powers, functions and institutional framework of POPC. It defines:\n- Composition of the Commission\n- Role of the Commissioner\n- District Committees structure\n- Advisory Councils framework\n\nThe Act can be downloaded from the official POPC website: https://ospc.punjab.gov.pk"
     }
   ]
 }
