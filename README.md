@@ -1,6 +1,6 @@
-# OPC Chatbot - Office of the Public Counsel Support
+# OPC Chatbot 
 
-AI-powered customer support chatbot for the Office of the Public Counsel (OPC). Built with Next.js, React, and Groq AI.
+AI-powered customer support chatbot for the (OPC). Built with Next.js, React, and Groq AI.
 
 ## ⚡ Quick Start (5 Minutes)
 
@@ -344,60 +344,6 @@ curl -X POST http://localhost:3000/api/bot-config \
   -H "x-admin-password: YourSecurePassword123" \
   -d '{...config...}'
 ```
-
-## 🚀 Deployment
-
-### Plesk/cPanel
-1. Upload files to public_html
-2. Create `.env` file with credentials
-3. Point domain to app directory
-4. Node.js will auto-start via web.config
-
-### Docker
-```bash
-docker build -t OPC-chatbot .
-docker run -e GROQ_API_KEY=xxx -p 3000:3000 OPC-chatbot
-```
-
-### Vercel (Recommended)
-1. Push to GitHub
-2. Connect to Vercel
-3. Add environment variables
-4. Deploy (automatic)
-
-## 🧪 Testing
-
-### Test Chat Endpoint
-```bash
-curl -X POST http://localhost:3000/api/chat \
-  -H "Content-Type: application/json" \
-  -d '{
-    "message": "How do I file a complaint?",
-    "history": []
-  }'
-```
-
-### Test Config Endpoint
-```bash
-curl http://localhost:3000/api/bot-config \
-  -H "x-admin-password: YourSecurePassword123"
-```
-
-### In Browser
-1. Visit http://localhost:3000
-2. Click chat bubble (💬)
-3. Ask a question
-4. Verify response from bot
-
-## 📋 Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| API key error | Check GROQ_API_KEY in .env |
-| Chat not responding | Verify backend is running on correct port |
-| Config changes not applied | Restart server (npm start) |
-| CORS errors | Add your domain to allowed origins |
-| Chat widget not loading | Check API_URL in embed code |
 
 ## 📞 Support
 

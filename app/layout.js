@@ -2,16 +2,16 @@ import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 export const metadata = {
-  title: "OCP - Office of the Public Counsel",
-  description: "Customer support chatbot for Office of the Public Counsel",
+  title: "OPC Punjab Assistant",
+  description: "Punjab Overseas Pakistanis Commission AI Assistant",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ margin: 0, padding: 0, background: 'transparent' }}>
         {children}
-        <ChatWidget />
+        <ChatWidget autoOpen={true} />
       </body>
     </html>
   );

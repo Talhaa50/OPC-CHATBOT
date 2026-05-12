@@ -5,8 +5,8 @@ import styles from "./ChatWidget.module.css";
 const BOT_NAME = "OPC Assistant";
 const BOT_SUBTITLE = "Office of the Public Counsel";
 
-export default function ChatWidget() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function ChatWidget({ autoOpen = false }) {
+  const [isOpen, setIsOpen] = useState(autoOpen);
   const [messages, setMessages] = useState([
     {
       role: "assistant",
@@ -20,7 +20,6 @@ export default function ChatWidget() {
   const bottomRef = useRef(null);
   const inputRef = useRef(null);
 
-  // Fetch quick actions from config
   useEffect(() => {
     const fetchQuickActions = async () => {
       try {
@@ -114,11 +113,12 @@ export default function ChatWidget() {
 
   return (
     <>
-      {/* Floating Bubble */}
+      {/* Floating Bubble — hidden, OPC site has its own button */}
       <button
         className={styles.bubble}
         onClick={() => setIsOpen((prev) => !prev)}
         aria-label="Open support chat"
+        style={{ display: "none" }}
       >
         {isOpen ? (
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
