@@ -123,6 +123,14 @@ const css = `
 `;
 
 export default function BotAdminPage() {
+  // Hide OPC chatbot widget on admin page
+  useEffect(() => {
+    const ids = ['opc-chat-btn','opc-badge','opc-chat-window'];
+    ids.forEach(id => { const el = document.getElementById(id); if(el) el.style.display='none'; });
+    const bubble = document.querySelector('[class*="bubble"]');
+    if(bubble) bubble.style.display='none';
+  }, []);
+
   const [auth, setAuth] = useState(false);
   const [pass, setPass] = useState("");
   const [passErr, setPassErr] = useState("");
