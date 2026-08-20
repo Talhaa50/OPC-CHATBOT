@@ -2,8 +2,6 @@ import Groq from "groq-sdk";
 import { readFileSync } from "fs";
 import { join } from "path";
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-
 function buildSystemPrompt(config) {
   const { personality, knowledge } = config;
   const rules = personality.systemPromptRules || {};
@@ -43,6 +41,19 @@ IMPORTANT RULES:
 
 export async function POST(req) {
   try {
+    // Initialize Groq client with API key from environment
+    const apiKey = process.env.GROQ_API_KEY;
+    
+    if (!apiKey) {
+      console.error("GROQ_API_KEY is not set");
+      return Response.json(
+        { reply: "Configuration error. Please contact our support team." },
+        { status: 500 }
+      );
+    }
+    
+    const groq = new Groq({ apiKey });
+    
     const { message, history = [] } = await req.json();
 
     const config = JSON.parse(
