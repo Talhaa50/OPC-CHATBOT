@@ -63,7 +63,7 @@ export async function POST(req) {
     const systemPrompt = buildSystemPrompt(config);
 
     const response = await groq.chat.completions.create({
-      model: "llama-3.1-70b-versatile",
+      model: "openai/gpt-oss-120b",
       messages: [
         { role: "system", content: systemPrompt },
         ...history,
