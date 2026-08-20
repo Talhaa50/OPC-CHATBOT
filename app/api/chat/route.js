@@ -41,7 +41,7 @@ IMPORTANT RULES:
 
 export async function POST(req) {
   try {
-    // Initialize Groq client with API key from environment
+    // Initialize Groq client with API key from environment variables
     const apiKey = process.env.GROQ_API_KEY;
     
     if (!apiKey) {
